@@ -1,0 +1,92 @@
+/* General */ 
+
+* {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62,5%;
+}
+
+body {
+    font-family: 'sans-serif';
+    font-size: 1.5rem;
+    font-weight: 200;
+    line-height: 1.3;
+    background-image: url('pexels-george-becker-112854.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+      
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Nav Section */
+
+nav {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    background-color: white;
+    top: 13%;
+    left: 24%;
+    width: fit-content;
+    height: 60px;
+    z-index: 2;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+#navlist {
+    display: flex;
+    justify-content: flex-end;
+    color: white;
+    top: 0;
+    right: 10px;
+    z-index: 3;
+    
+}
+
+.links {
+    margin-right: 30px;
+}
+
+img {
+    display: block;
+    position: absolute;
+    left: 2%;
+    top: 1%;
+    width: 80px;
+}
+
+#logo_date {
+    display: block;
+    position: absolute;
+    left: 1.25%;
+    top: 12.75%;
+}
+
+/* Cards */
+
+#eventos {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    height: auto;
+    top: 30%;
+    left: 10%;
+    border: 1px solid red;
+}
