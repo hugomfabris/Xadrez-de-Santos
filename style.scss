@@ -27,10 +27,19 @@ body {
 a {
     text-decoration: none;
     color: black;
+
+    &:hover {
+      color: #323499;
+      transition: color 0.3s ease-in-out;
+  }
 }
 
 ul {
     list-style: none;
+}
+
+p {
+  max-width: 30ch;
 }
 
 /* Nav Section */
@@ -49,10 +58,10 @@ header h1 {
 
 nav {
     &.primary-navigation {
-      margin: 50px auto;
+      margin: 100px auto;
       display: block;  
       text-align: center;
-      font-size: 20px;
+      font-size: 23px;
   
       ul li {
         list-style: none;
@@ -63,14 +72,6 @@ nav {
         text-decoration: none;
         text-align: center;
 
-      }
-  
-      li a {
-        color: #1d1d1d;
-      }
-  
-      li a:hover {
-        color: #323499;
       }
   
       li:hover {
@@ -94,7 +95,7 @@ nav {
         display: flex;
         flex-direction: column;
         font-size: 16px;
-        min-width: 500px;
+        min-width: 300px;
         overflow: hidden;
         text-align: center;
         padding-top: 20px;
@@ -155,21 +156,118 @@ img {
 
 /* Cards */
 
-.divs {
+#contact_section {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 25%;
+  left: 31%;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  width: 700px;
+  height: auto;
+  padding: 30px;
+  background-color: #eff3f2;
+  border-radius: 15px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  font-family: 'IBM Plex Sans', Helvetica, sans-serif;
+  font-size: 18px;
+
+  .info {
     display: flex;
-    flex-direction: column;
-    position: absolute;
     justify-content: center;
     align-items: center;
+  }
 
-    &:hover {
-        transform: scale(1.1);
-        transition: 0.5s;
-    }
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 0;
+  }
+  #map {
+    padding: 20px;
+    max-width: 300px;
+    overflow: hidden;
 
-    a:hover {
-        color: #323499;
+    #adress {
+      width: 100px;
     }
+  }
+}
+
+input, textarea {
+  line-height: normal;
+  border: none;
+  text-align: start;
+  
+
+  &:focus {
+    outline: none;
+  }
+  &:focus::-webkit-input-placeholder {
+    opacity: 0;
+}
 
 }
 
+input {
+  width: 200px;
+  height: 40px;
+  padding: 0 20px;
+ 
+}
+
+#name_email {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+
+}
+
+#contactForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #323499;
+}
+
+#dropdown_eventos, #dropdown_circuito {
+  min-width: 575px;
+}
+
+@media only screen and (max-width: 688px) {
+  #logo {
+    display: none;
+  }
+
+  #logo_date {
+    display: none;
+  }
+
+  nav {
+    &.primary-navigation {
+      margin: 20px auto;
+    }
+  }
+}
+
+@media only screen and (max-width: 618px) {
+  body {
+    background-image: url('pexels-george-becker-112854-cut.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  nav {
+    &.primary-navigation {
+      margin: 80px auto;
+    }
+  }
+}

@@ -1,10 +1,10 @@
-const mapDiv = document.getElementById('map')
-const info = document.getElementById('info');
+const contactDiv = document.getElementById('contact_div')
+const contact = document.getElementById('contact');
 
-const showMap = () => {
-  return mapDiv.style.visibility = 'visible';
+const showContact = () => {
+  return contactDiv.style.visibility = 'visible';
   
 }
 
-info.addEventListener("click", showMap);
+contact.addEventListener("click", showContact);
 
