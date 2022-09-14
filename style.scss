@@ -58,7 +58,7 @@ header h1 {
 
 nav {
     &.primary-navigation {
-      margin: 100px auto;
+      margin: 80px auto;
       display: block;  
       text-align: center;
       font-size: 23px;
@@ -161,7 +161,7 @@ img {
   flex-direction: row;
   position: absolute;
   top: 25%;
-  left: 31%;
+  left: 29%;
   justify-content: center;
   align-items: center;
   visibility: hidden;
@@ -180,20 +180,23 @@ img {
     align-items: center;
   }
 
+  form {
+    margin-right: 50px;
+  }
   .form-group {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     padding: 10px 0;
+    gap: 10px;
   }
-  #map {
-    padding: 20px;
-    max-width: 300px;
+  #map {  
+    width: 100%;
     overflow: hidden;
 
     #adress {
-      width: 100px;
+      width: 100%;
     }
   }
 }
@@ -213,6 +216,41 @@ input, textarea {
 
 }
 
+textarea {
+  height: 125px;
+  resize: none;
+
+  &::placeholder {
+    text-align: center;
+    position: relative; 
+    top: 5%;
+  }
+}
+
+.btn {
+  cursor: pointer;
+  outline: 0;
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 6px 12px;
+  font-size: 1rem;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  color: #323499;
+  border-color: #323499;
+  
+  &:hover {
+      color: #fff;
+      background-color: #323499;
+      border-color: #323499;
+  }
+
+
+}
 input {
   width: 200px;
   height: 40px;
@@ -220,26 +258,47 @@ input {
  
 }
 
-#name_email {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-
-}
-
 #contactForm {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 750px;
   height: 100%;
-  border: 1px solid #323499;
 }
 
 #dropdown_eventos, #dropdown_circuito {
   min-width: 575px;
 }
+
+.fa {
+  color: #323499;
+  font-size: 30px;
+  margin: 0;
+}
+
+#info {
+    div {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      text-align: left;
+    }
+}
+
+#icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+ }
 
 @media only screen and (max-width: 688px) {
   #logo {

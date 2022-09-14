@@ -1,4 +1,4 @@
-const contactDiv = document.getElementById('contact_div')
+const contactDiv = document.getElementById('contact_section')
 const contact = document.getElementById('contact');
 
 const showContact = () => {

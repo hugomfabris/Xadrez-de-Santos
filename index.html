@@ -104,51 +104,49 @@
         </nav>
     </header>
     <section id="contact_section">
-            <form method="POST" id="contactForm" name="contactForm" class="contactForm">
+            <form method="POST" action="https://formsubmit.co/c6ddc3a23a3ec8f6ad5cb356ad2c3616">
                 <h2>Entre em contato!</h2>
                 <div class="form_div">
-                    <div class="col-md-6">
+                    <div>
                         <div class="form-group" id="name_email">
                             <label for="name"></label>
-                            <input type="text" class="form-control" name="name" id="name" placeholder="Nome">
+                            <input type="text" class="form-control" name="name" id="name" placeholder="Nome" required>
                             <label for="email"></label>
-                            <input type="email" class="form-control" name="email" id="email" placeholder="Email">
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
                         </div>
                     </div>
-                    </div>
-                    <div class="col-md-12">
+                </div>
+                    <div>
                         <div class="form-group">
                             <label class="label" for="#"></label>
-                            <textarea name="message" class="form-control" id="message" cols="30" rows="4"></textarea>
+                            <textarea name="message" class="form-control" id="message" cols="30" rows="4" placeholder="Escreva sua mensagem"></textarea>
                         </div>
                     </div>
-                    <div class="col-md-12">
+                    <div>
                         <div class="form-group">
-                            <input type="submit" value="Send Message" class="btn btn-primary">
+                            <input type="submit" value="Send" class="btn">
                             <div class="submitting"></div>
                         </div>
                     </div>
-                </div>
-                <div class="info">
-                    <i class="fa-solid fa-globe 3x"></i>
-                    <p>Rua Fernão Dias, 46, sl 03
-                        <br>
-                    Gonzaga   Santos – SP</p>
-                </div>
-                <div class="info">
-                    <i class="fa-solid fa-envelope"></i>
-                    <p>E-mail: <br> clube@xadrezdesantos.com.br</p>
+                </form>
+                <div id="info">
+                    <div>
+                        <i class="fa fa-globe"></i>
+                        <p>Rua Fernão Dias, 46, sl 03
+                            <br>
+                        Gonzaga   Santos – SP</p>
+                    </div>
+                    <div>
+                        <i class="fa fa-envelope"></i>
+                        <p>E-mail: <br> clube@xadrezdesantos.com.br</p>
+                    </div>
+                    <div id="map">
+                        <iframe id='adress' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3645.775651973055!2d-46.33479998521144!3d-23.968372184482295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce035e1c9fb817%3A0x1a79af6cca147341!2sR.%20Fern%C3%A3o%20Dias%2C%2046%20-%20Gonzaga%2C%20Santos%20-%20SP%2C%2011055-220!5e0!3m2!1spt-BR!2sbr!4v1662735160719!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></div>
+                        </iframe>
                     </div>
                 </div>
-            </div>
-            </form>
             
-        <div id="map">
-            <iframe id='adress' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3645.775651973055!2d-46.33479998521144!3d-23.968372184482295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce035e1c9fb817%3A0x1a79af6cca147341!2sR.%20Fern%C3%A3o%20Dias%2C%2046%20-%20Gonzaga%2C%20Santos%20-%20SP%2C%2011055-220!5e0!3m2!1spt-BR!2sbr!4v1662735160719!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></div>
-            </iframe>
-        </div>
+        
     </section>
-    
-    
 </body>
 </html>
